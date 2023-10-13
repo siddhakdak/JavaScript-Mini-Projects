@@ -1,0 +1,114 @@
+body{
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: linear-gradient(to right,#f95ce2,#edca11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    /* border: 1px solid black;  */
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.calculator{
+    border: 1ps solid lightgrey;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 400px;
+    margin: auto;
+    padding: 0 25px;
+    font-size: 1rem;
+    font-weight: 100;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    padding-bottom: 16px;
+
+
+}
+
+.calculator input{
+    box-sizing: border-box;
+    width: 80%;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    border-top-left-radius: 0; 
+     border-bottom-left-radius: 0;
+
+}
+
+.calculator button{
+    width: 10%;
+    padding: 8px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+}
+
+.calculator button:hover{
+background-color: rgba(0, 0, 0, 0.1);
+} 
+
+#quality{
+    width: 91%;
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+#tip-amount{
+    visibility: hidden;
+    min-width: 250px;
+    margin: auto;
+    background-color: limegreen;
+    color: white;
+    bottom: 30px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 16px;
+    position: fixed;
+
+}
+
+#tip-amount.show{
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadout 0.5s 2.5s;
+    animation: fadin 0.5s, fadout 0.5s 2.5s;
+}
+
+
+@-webkit-keyframes fadin{
+    from{bottom: 0; opacity: 0;}
+    to{bottom: 30px; opacity: 1;}
+  
+}
+
+@keyframes fadin{
+    from{bottom: 0; opacity: 0;}
+    to{bottom: 30px; opacity: 1;}
+  
+}
+
+@-webkit-keyframes fadout{
+    from{bottom: 30px; opacity: 1;}
+    to{bottom: 0; opacity: 0;}
+  
+}
+
+@keyframes fadout{
+    from{bottom: 30px; opacity: 1;}
+    to{bottom: 0; opacity: 0;}
+  
+}

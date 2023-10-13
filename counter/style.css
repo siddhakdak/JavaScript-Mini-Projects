@@ -1,0 +1,44 @@
+body{
+    background-color: yellow;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    justify-content: center;
+    display: flex;
+    margin-top: 150px
+}
+
+.container{
+    background-color: wheat;
+    border: 4px solid black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    width: 20rem;
+}
+
+#inc{
+  background-color: bisque;
+  padding: 5px;
+  border: 1px solid black;
+  
+}
+
+#count{
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 50px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+#inc:hover{
+background-color: rgb(255, 255, 155);
+border: 2px solid rgb(255, 255, 155);
+}
